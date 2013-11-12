@@ -6,6 +6,8 @@ files. You can add --hard to make the working tree reflect the
 new branch tip, but beware: this will also discard any current
 uncommitted changes, which you will lose with no recourse. 
 
+
+
 Reuse the Message from an Existing
 Commit?
 $ git commit --reset-author -C rev
