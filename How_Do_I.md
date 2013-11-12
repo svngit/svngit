@@ -28,6 +28,9 @@ $ git --git-dir ~/other/.git format-patch  -1 --stdout rev | git am
 
 #### List Files with Conflicts when Merging?    
 
+
+
+
 ####Reuse the Message from an Existing  Commit?   
 $ git commit --reset-author -C rev
 Add --edit to edit the message before committing.    
@@ -35,20 +38,23 @@ Add --edit to edit the message before committing.
 
 
 ####Reapply an Existing Commit from  Another Branch?
-$ git cherry-pick rev  
+$ git cherry-pick rev
+
+
 If the commit is in a different local repository, ~/other:     
 $ git --git-dir ~/other/.git format-patch -1 --stdout rev | git am     
 -----
 
-
 ####List Files with Conflicts when Merging?  
 
 ####List Files with Conflicts when Merging?  
-git status shows these as part of its report, but to just list their  names:  
+git status shows these as part of its report, but to just list their  names:     
 $ git diff --name-only --diff-filter=U 
 
 ####Get a Summary of My Branches?  
 -----
+
+
 ####Get a Summary of My Branches?  
 List local branches: git branch  
 
