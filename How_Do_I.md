@@ -1,10 +1,12 @@
-Undo My Last n Commits?
-$ git reset HEAD~n
-This removes the last n commits of a linear history from the
-current branch, leaving the corresponding changes in your working
-files. You can add --hard to make the working tree reflect the
-new branch tip, but beware: this will also discard any current
-uncommitted changes, which you will lose with no recourse. 
+Undo My Last n Commits?  
+$ git reset HEAD~n  
+This removes the last n commits of a linear history from the   
+current branch, leaving the corresponding changes in your working   
+files. You can add --hard to make the working tree reflect the   
+new branch tip, but beware: this will also discard any current   
+uncommitted changes, which you will lose with no recourse.   
+
+      
 
 
 
