@@ -10,9 +10,11 @@ uncommitted changes, which you will lose with no recourse.
 ------
 
 #### Reuse the Message from an Existing Commit?  
-$ git commit --reset-author -C rev
-Add --edit to edit the message before committing.  
-------
+$ git commit --reset-author -C rev  
+Add --edit to edit the message before   committing. 
+-------
+
+
 #### Reapply an Existing Commit from  Another Branch?  
 $ git cherry-pick rev  
 
@@ -83,7 +85,7 @@ changes later with git stash pop.
 
 
 
-####¦Add a Downstream Branch Without Checking It Out?  
+####ï¿½Add a Downstream Branch Without Checking It Out?  
 $ git branch foo origin/foo   
 This adds a local branch and sets up push/pull tracking as if you  
 had done git checkout foo, but does not do the checkout or  
