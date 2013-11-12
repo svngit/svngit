@@ -4,8 +4,9 @@ $ git reset HEAD~n
 This removes the last n commits of a linear history from the   
 current branch, leaving the corresponding changes in your working   
 files. You can add --hard to make the working tree reflect the   
-new branch tip, but beware: this will also discard any current   
-uncommitted changes, which you will lose with no recourse.   
+new branch tip, but beware: this will also discard any current    
+uncommitted changes, which you will lose with no recourse.  
+
 ------
 
 
@@ -20,18 +21,24 @@ $ git cherry-pick rev
 
 If the commit is in a different local repository, ~/other:  
 $ git --git-dir ~/other/.git format-patch  -1 --stdout rev | git am  
-------
-#### List Files with Conflicts when Merging?  
+--------
 
-####Reuse the Message from an Existing  Commit?
+
+#### List Files with Conflicts when Merging?    
+
+####Reuse the Message from an Existing  Commit?   
 $ git commit --reset-author -C rev
-Add --edit to edit the message before committing.  
-----
+Add --edit to edit the message before committing.    
+------
+
+
 ####Reapply an Existing Commit from  Another Branch?
 $ git cherry-pick rev  
 If the commit is in a different local repository, ~/other:  
 $ git --git-dir ~/other/.git format-patch -1 --stdout rev | git am  
 -----
+
+
 ####List Files with Conflicts when Merging?  
 
 ####List Files with Conflicts when Merging?  
