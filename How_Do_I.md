@@ -88,31 +88,35 @@ Add --name-only or --name-status for a more compact listing.
 git stash saves and sets your outstanding changes aside, so you
 can perform other operations that might be blocked by them,
 such as checking out a different branch. You can restore your
-changes later with git stash pop.
+changes later with git stash pop.  
+--------
 
-
-
-####�Add a Downstream Branch Without Checking It Out?  
+####Add a Downstream Branch Without Checking It Out?  
 $ git branch foo origin/foo   
 This adds a local branch and sets up push/pull tracking as if you  
 had done git checkout foo, but does not do the checkout or  
 change your current branch.  
+-----
 
-
-…List the Files in a Specific Commit?  
+####List the Files in a Specific Commit?  
 $ git ls-tree -r --name-only rev  
 This listing is restricted to the current directory; add --fulltree  
-for a complete list.  
-…Show the Changes Made by a Commit?  
+for a complete list.
+------
+
+
+####Show the Changes Made by a Commit?  
 git show rev is easier that git diff rev~ rev, and shows the  
 author, timestamp, commit ID, and message as well. Add -s to  
 suppress the diff and just see the latter information; use --namestatus    
 or --stat to summarize the changes. It also works for  
 merge commits, showing conflicts from the merge as with git  
 log --cc (see “Showing Diffs” on page 142). The default for rev is HEAD.  
+-----
 
 
-…Get Tab Completion of Branch Names,Tags, and So On?  
+
+####Get Tab Completion of Branch Names,Tags, and So On?  
 Git comes with a completion package for bash and zsh, installed  
 in its git-core directory as git-completion.bash. You can use it  
 by including (or “sourcing”) this file in your shell startup file (e.g.,  
@@ -131,20 +135,24 @@ reflect the current branch status when your working directory is
 a Git repository.  
 
 
-…List All Remotes?  
+####List All Remotes?  
 git remote does this; add -v to see the corresponding URLs configured  
 for push and pull (ordinarily the same):  
 $ git remote -v  
 origin http://olympus.example.com/aphrodite (fetch)  
 origin http://olympus.example.com/aphrodite (push)  
 
+------
 
-…Change the URL for a Remote?  
+
+####Change the URL for a Remote?  
 $ git remote set-url remote URL  
+--
+-----
 
 
 
-…Remove Old Remote-Tracking  Branches?  
+####Remove Old Remote-Tracking  Branches?  
 $ git remote prune origin  
 This removes tracking for remote branches that have been deleted upstream.  
 
