@@ -31,7 +31,7 @@ Add --edit to edit the message before committing.
 Another Branch?
 $ git cherry-pick rev
 If the commit is in a different local repository, ~/other:
-$ git --git-dir ~/other/.git format-patch ?
+$ git --git-dir ~/other/.git format-patch ? -
 -1 --stdout rev | git am
 See:
 ? Ą°Importing Linear HistoryĄą on page 156
