@@ -31,14 +31,12 @@ If the commit is in a different local repository, ~/other:
 $ git --git-dir ~/other/.git format-patch ↵  
 -1 --stdout rev | git am  
 
-List Files with Conflicts when Merging?  
->>>>>>> a33306a5b26c61312c283cf3062d1c000d88eeff
+####List Files with Conflicts when Merging?  
 git status shows these as part of its report, but to just list their  
 names:  
 $ git diff --name-only --diff-filter=U 
 
-<<<<<<< HEAD
-##Get a Summary of My Branches?  
+####Get a Summary of My Branches?  
 =======
 Get a Summary of My Branches?  
 >>>>>>> a33306a5b26c61312c283cf3062d1c000d88eeff
