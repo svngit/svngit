@@ -8,10 +8,12 @@ uncommitted changes, which you will lose with no recourse.
 
 
 
+
 Reuse the Message from an Existing
 Commit?
 $ git commit --reset-author -C rev
 Add --edit to edit the message before committing.
+
 
 
 
