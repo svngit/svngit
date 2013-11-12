@@ -31,4 +31,4 @@ Get a Summary of My Branches?
 • Get a compact summary of local branches and status with
 respect to their upstream counterparts: git branch -vv
 • Get detail about the remote as well: git remote show ori
-gin (or other named remote)
+gin (or other named remote) 
