@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 ## Undo My Last n Commits?  
 $ git reset HEAD~n  
 
+=======
+Undo My Last n Commits?  
+$ git reset HEAD~n  
+>>>>>>> a33306a5b26c61312c283cf3062d1c000d88eeff
 This removes the last n commits of a linear history from the   
 current branch, leaving the corresponding changes in your working   
 files. You can add --hard to make the working tree reflect the   
@@ -9,6 +14,7 @@ uncommitted changes, which you will lose with no recourse.
 
 
 
+<<<<<<< HEAD
 ## Reuse the Message from an Existing Commit?  
 $ git commit --reset-author -C rev
 Add --edit to edit the message before committing.  
@@ -20,11 +26,30 @@ If the commit is in a different local repository, ~/other:
 $ git --git-dir ~/other/.git format-patch  -1 --stdout rev | git am  
 
 ## List Files with Conflicts when Merging?  
+=======
+Reuse the Message from an Existing  
+Commit?
+$ git commit --reset-author -C rev
+Add --edit to edit the message before committing.  
+
+Reapply an Existing Commit from  
+Another Branch?
+$ git cherry-pick rev  
+If the commit is in a different local repository, ~/other:  
+$ git --git-dir ~/other/.git format-patch ↵  
+-1 --stdout rev | git am  
+
+List Files with Conflicts when Merging?  
+>>>>>>> a33306a5b26c61312c283cf3062d1c000d88eeff
 git status shows these as part of its report, but to just list their  
 names:  
 $ git diff --name-only --diff-filter=U 
 
+<<<<<<< HEAD
 ##Get a Summary of My Branches?  
+=======
+Get a Summary of My Branches?  
+>>>>>>> a33306a5b26c61312c283cf3062d1c000d88eeff
 • List local branches: git branch    
 • List all branches: git branch -a    
 • Get a compact summary of local branches and status with    
