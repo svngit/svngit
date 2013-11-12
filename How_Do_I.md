@@ -17,11 +17,13 @@ Add --edit to edit the message before   committing.
 -------
 
 #### Reapply an Existing Commit from  Another Branch?  
-$ git cherry-pick rev  
+$ git cherry-pick rev      
 
-If the commit is in a different local repository, ~/other:  
-$ git --git-dir ~/other/.git format-patch  -1 --stdout rev | git am  
+If the commit is in a different local repository, ~/other:      
+$ git --git-dir ~/other/.git format-patch  -1 --stdout rev | git am        
 --------
+
+
 
 
 #### List Files with Conflicts when Merging?    
@@ -34,8 +36,8 @@ Add --edit to edit the message before committing.
 
 ####Reapply an Existing Commit from  Another Branch?
 $ git cherry-pick rev  
-If the commit is in a different local repository, ~/other:  
-$ git --git-dir ~/other/.git format-patch -1 --stdout rev | git am  
+If the commit is in a different local repository, ~/other:     
+$ git --git-dir ~/other/.git format-patch -1 --stdout rev | git am     
 -----
 
 
