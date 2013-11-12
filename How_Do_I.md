@@ -1,4 +1,4 @@
-## Undo My Last n Commits?  
+#### Undo My Last n Commits?  
 $ git reset HEAD~n  
 
 This removes the last n commits of a linear history from the   
@@ -9,70 +9,81 @@ uncommitted changes, which you will lose with no recourse.
 
 ------
 
-## Reuse the Message from an Existing Commit?  
+#### Reuse the Message from an Existing Commit?  
 $ git commit --reset-author -C rev
 Add --edit to edit the message before committing.  
------
-## Reapply an Existing Commit from  Another Branch?  
-$ git cherry-pick rev  
 ------
+#### Reapply an Existing Commit from  Another Branch?  
+$ git cherry-pick rev  
+
 If the commit is in a different local repository, ~/other:  
 $ git --git-dir ~/other/.git format-patch  -1 --stdout rev | git am  
 ------
-## List Files with Conflicts when Merging?  
-=======
-Reuse the Message from an Existing  Commit?
+#### List Files with Conflicts when Merging?  
+
+####Reuse the Message from an Existing  Commit?
 $ git commit --reset-author -C rev
 Add --edit to edit the message before committing.  
 ----
-Reapply an Existing Commit from  Another Branch?
+####Reapply an Existing Commit from  Another Branch?
 $ git cherry-pick rev  
 If the commit is in a different local repository, ~/other:  
-$ git --git-dir ~/other/.git format-patch ↵  
--1 --stdout rev | git am  
+$ git --git-dir ~/other/.git format-patch -1 --stdout rev | git am  
+-----
+####List Files with Conflicts when Merging?  
 
 ####List Files with Conflicts when Merging?  
-git status shows these as part of its report, but to just list their  
-names:  
+git status shows these as part of its report, but to just list their  names:  
 $ git diff --name-only --diff-filter=U 
 
 ####Get a Summary of My Branches?  
-=======
-Get a Summary of My Branches?  
->>>>>>> a33306a5b26c61312c283cf3062d1c000d88eeff
-• List local branches: git branch    
-• List all branches: git branch -a    
-• Get a compact summary of local branches and status with    
-respect to their upstream counterparts: git branch -vv    
-• Get detail about the remote as well: git remote show origin (or other named remote) 
+-----
+####Get a Summary of My Branches?  
+List local branches: git branch  
+
+------
+List all branches: git branch -a    
+
+------
+Get a compact summary of local branches and status with respect to their upstream counterparts: git branch -vv    
 
 
-Get a Summary of My Working Tree and Index State?  
+Get detail about the remote as well: git remote show origin (or other named remote) 
+
+-----
+
+
+#### Get a Summary of My Working Tree and Index State?  
 $ git status  
 Add -sb for a more compact listing; see the “Short Format” section  
 of git-status(1) on how to interpret this.  
-…Stage All the Current Changes to My  
-Working Files?  
+-----
+
+
+#### Stage All the Current Changes to My Working Files?  
 $ git add -A  
 This does git add for every changed, new, and deleted file in your  
 working tree. Add --force to include normally ignored files; you  
 might do this when adding a new release to a “vendor branch,”  
 which tracks updates to other projects you obtain by means other  
 than Git (e.g., tarballs).  
-…Show the Changes to My Working Files?  
+-----
+
+
+####Show the Changes to My Working Files?  
 git diff shows unstaged changes; add --stage to see staged  changes instead.  
 Add --name-only or --name-status for a more compact listing.  
+------
 
-
-…Save and Restore My Working Tree andI ndex Changes?  
+####Save and Restore My Working Tree andI ndex Changes?  
 git stash saves and sets your outstanding changes aside, so you
 can perform other operations that might be blocked by them,
 such as checking out a different branch. You can restore your
-changes later with git stash pop. See “git stash” on page 188.
+changes later with git stash pop.
 
 
 
-…Add a Downstream Branch Without Checking It Out?  
+####�Add a Downstream Branch Without Checking It Out?  
 $ git branch foo origin/foo   
 This adds a local branch and sets up push/pull tracking as if you  
 had done git checkout foo, but does not do the checkout or  
