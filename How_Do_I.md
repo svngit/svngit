@@ -1,4 +1,4 @@
-# Undo My Last n Commits?  
+### Undo My Last n Commits?  
 $ git reset HEAD~n  
 
 This removes the last n commits of a linear history from the   
