@@ -1,4 +1,4 @@
-### Undo My Last n Commits?  
+#### Undo My Last n Commits?  
 $ git reset HEAD~n  
 
 This removes the last n commits of a linear history from the   
@@ -9,11 +9,11 @@ uncommitted changes, which you will lose with no recourse.
 
 ------
 
-## Reuse the Message from an Existing Commit?  
+##### Reuse the Message from an Existing Commit?  
 $ git commit --reset-author -C rev
 Add --edit to edit the message before committing.  
------
-## Reapply an Existing Commit from  Another Branch?  
+------
+##### Reapply an Existing Commit from  Another Branch?  
 $ git cherry-pick rev  
 ------
 If the commit is in a different local repository, ~/other:  
